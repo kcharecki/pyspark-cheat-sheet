@@ -3,8 +3,22 @@
 # Querying data
 
 ## Select
+df.select('column_name')
+df.select(col('column_name'))
+
+df.selectExpr('column_name as column_alias')
+
 ## Filter/Where
 
+where is an alias for filter
+for col > 
+from pyspark.sql.functions import col
+
+df.filter(col('column_name') == "value")
+df.filter('column_name == ""')
+
+df.where(col('column_name') == "value")
+df.where('column_name == ""')
 
 
 Markdown toolset from https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
